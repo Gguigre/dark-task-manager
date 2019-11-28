@@ -1,12 +1,9 @@
 import React, { PureComponent } from 'react';
-import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { NavigationInjectedProps, ScrollView } from 'react-navigation';
-import { theme } from '../../theme';
-import { Title } from '../../components/Title';
-import { Card } from '../../components/Card';
-import { Subtitle } from '../../components/Subtitle';
-import { Section } from '../../components/Section';
 import { CurrentTaskCard } from '../../components/CurrentTaskCard';
+import { Section } from '../../components/Section';
+import { theme } from '../../theme';
 
 const styles = StyleSheet.create({
   container: {
@@ -22,14 +19,15 @@ export class Home extends PureComponent<NavigationInjectedProps<{}>> {
       <View style={styles.container}>
         <ScrollView
           contentContainerStyle={{
-            padding: theme.spacings.xxlarge,
+            paddingHorizontal: theme.spacings.large,
+            paddingTop: theme.spacings.huge,
           }}
         >
           <Section title="CurrentTask">
             <CurrentTaskCard />
           </Section>
-          <Title>My projects</Title>
-          <Title>Done today</Title>
+          <Section title="My projects"></Section>
+          <Section title="Done today"></Section>
         </ScrollView>
       </View>
     );

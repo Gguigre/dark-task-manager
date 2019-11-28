@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     color: theme.colors.white,
+    fontWeight: '600',
   },
 });
 
