@@ -1,0 +1,11 @@
+import React from 'react';
+import TestRenderer from 'react-test-renderer';
+import { App } from '../App';
+import { tick } from './utils.test';
+
+describe('App', () => {
+  it('instantiate the application', async () => {
+    TestRenderer.create(<App />);
+    await tick();
+  });
+});

@@ -1,0 +1,18 @@
+Device ID	Device Name
+00008020-001344e034c2002e	Developers BAM - iPhone XS
+0313c29d3d81afad30dc6fd514d4a80db5ff1498	Developers BAM - iPhone 8
+08480a890c0ebf87cfe905a4c4abdd2a1f72c31d	Developers BAM - iPhone 5c
+0923a73e54dac491d92e6848650322a830090c44	Developers BAM - iPhone 7
+0defdda47f87c438664ba5c162f53e539f477685	Developers BAM - iPhone SE
+166d9beac498d625a44dcdd18a45ce48cc7d0b30	Developers BAM - iPhone SE
+42d1025b409d557c726e97ba10dcdfb9a7cc30cb	Developers BAM - iPhone SE
+5e7fd3827810d4faa089e71c0a293c8e868a6732	Developers BAM - iPhone SE
+8f3e1d5d70f63781a832552b659b716265dfa184	Developers BAM - iPhone SE
+8f9f90311cbbfbca2527a246e49bb5240884eccc	Developers BAM - iPhone 7
+a7cbb293e46ab46a5b2bd15879b35877f6936535	Developers BAM - iPhone 5s
+aa31109850c602d26da057cd9fd7a4ab1f0a57c3	Developers BAM - iPhone X
+b5bac9d32f5d20d4ecc85c9425ccbcba2c89cfce	Developers BAM - iPhone 5s
+c702637cc7c342863f5720b9c59e9b4f06c4c293	Developers BAM - iPhone 6
+d911dfe10bf3364e5c2087a2b33c5a8dc291feb6	Developers BAM - iPhone X
+e960eb1bab770de4d1e2840e16190f431fa0dce1	Developers BAM - iPhone X
+fbb59a20ef8bc5e3882c7cb4ee2db5b96ab09d7c	Developers BAM - iPhone 7

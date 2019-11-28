@@ -16,10 +16,10 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* DarkTasksManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DarkTasksManagerTests.m */; };
-		31A275FE187C76E07A209C87 /* libPods-DarkTasksManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C5A3BB1C3D24C8C4D3F500 /* libPods-DarkTasksManager.a */; };
-		4D06F8A9B89322009DEB1A23 /* libPods-DarkTasksManager-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB58CB64B327B5B70DD95978 /* libPods-DarkTasksManager-tvOSTests.a */; };
-		61A0A7D2DB9022681D5EBEC7 /* libPods-DarkTasksManager-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D67519CDD7A3853446201F2 /* libPods-DarkTasksManager-tvOS.a */; };
-		9EB1AB79F1276C710041C310 /* libPods-DarkTasksManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC455D6CF4C98D3A4068562 /* libPods-DarkTasksManagerTests.a */; };
+		3A3D3AEA6BEDF9BC7588C535 /* libPods-DarkTasksManager-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B6308AACBA46F705297F7A /* libPods-DarkTasksManager-tvOS.a */; };
+		4E9EA83C69463C69DF588130 /* libPods-DarkTasksManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C4A2B7CC49715D1418882C /* libPods-DarkTasksManagerTests.a */; };
+		9ACBB6E704BB1813F08C3469 /* libPods-DarkTasksManager-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE264603E19C06528D8FBC8 /* libPods-DarkTasksManager-tvOSTests.a */; };
+		F5215AD6834B6F19129FA7B5 /* libPods-DarkTasksManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB2A30DE0D2FA778B559F9E0 /* libPods-DarkTasksManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,22 +51,22 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DarkTasksManager/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DarkTasksManager/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DarkTasksManager/main.m; sourceTree = "<group>"; };
-		146CDF415206A609FF6F9E2F /* Pods-DarkTasksManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManagerTests.release.xcconfig"; path = "Target Support Files/Pods-DarkTasksManagerTests/Pods-DarkTasksManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		266008337F32AB2CBF6007CA /* Pods-DarkTasksManager-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager-tvOSTests/Pods-DarkTasksManager-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* DarkTasksManager-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DarkTasksManager-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* DarkTasksManager-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DarkTasksManager-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D67519CDD7A3853446201F2 /* libPods-DarkTasksManager-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DarkTasksManager-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72C5A3BB1C3D24C8C4D3F500 /* libPods-DarkTasksManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DarkTasksManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		78D89CE161B9D4981130C904 /* Pods-DarkTasksManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-DarkTasksManagerTests/Pods-DarkTasksManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7B726B05AB46D55BEE00E644 /* Pods-DarkTasksManager-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager-tvOS.release.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager-tvOS/Pods-DarkTasksManager-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		98661FCF9B5CA50DB82A9889 /* Pods-DarkTasksManager-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager-tvOSTests/Pods-DarkTasksManager-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AC2C1E33B819AE4B33151D28 /* Pods-DarkTasksManager-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager-tvOS/Pods-DarkTasksManager-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		AF88DE0658C7D535F09E0D0F /* Pods-DarkTasksManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager.release.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager/Pods-DarkTasksManager.release.xcconfig"; sourceTree = "<group>"; };
-		BB58CB64B327B5B70DD95978 /* libPods-DarkTasksManager-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DarkTasksManager-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE7F141F707D0DCE595962CB /* Pods-DarkTasksManager-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager-tvOSTests/Pods-DarkTasksManager-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		BEC455D6CF4C98D3A4068562 /* libPods-DarkTasksManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DarkTasksManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE264603E19C06528D8FBC8 /* libPods-DarkTasksManager-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DarkTasksManager-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C4A2B7CC49715D1418882C /* libPods-DarkTasksManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DarkTasksManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF11DCE90AE523E266E51D7 /* Pods-DarkTasksManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager.release.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager/Pods-DarkTasksManager.release.xcconfig"; sourceTree = "<group>"; };
+		A8B6308AACBA46F705297F7A /* libPods-DarkTasksManager-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DarkTasksManager-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DB29282D620781A164072C /* Pods-DarkTasksManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManagerTests.release.xcconfig"; path = "Target Support Files/Pods-DarkTasksManagerTests/Pods-DarkTasksManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		C81523CEC3A5DC9A3C98F24B /* Pods-DarkTasksManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager.debug.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager/Pods-DarkTasksManager.debug.xcconfig"; sourceTree = "<group>"; };
+		D2CEBC8E97756C5E1C69B710 /* Pods-DarkTasksManager-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager-tvOS.release.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager-tvOS/Pods-DarkTasksManager-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EE3899E6CCA0691380A01708 /* Pods-DarkTasksManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager.debug.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager/Pods-DarkTasksManager.debug.xcconfig"; sourceTree = "<group>"; };
+		F1EA27B681CDDAA5EC9533CE /* Pods-DarkTasksManager-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager-tvOS/Pods-DarkTasksManager-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F2B67442684EA40314EEA8DC /* Pods-DarkTasksManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-DarkTasksManagerTests/Pods-DarkTasksManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB2A30DE0D2FA778B559F9E0 /* libPods-DarkTasksManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DarkTasksManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA4A5569CF69AAD6B648D76 /* Pods-DarkTasksManager-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkTasksManager-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-DarkTasksManager-tvOSTests/Pods-DarkTasksManager-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EB1AB79F1276C710041C310 /* libPods-DarkTasksManagerTests.a in Frameworks */,
+				4E9EA83C69463C69DF588130 /* libPods-DarkTasksManagerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31A275FE187C76E07A209C87 /* libPods-DarkTasksManager.a in Frameworks */,
+				F5215AD6834B6F19129FA7B5 /* libPods-DarkTasksManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61A0A7D2DB9022681D5EBEC7 /* libPods-DarkTasksManager-tvOS.a in Frameworks */,
+				3A3D3AEA6BEDF9BC7588C535 /* libPods-DarkTasksManager-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D06F8A9B89322009DEB1A23 /* libPods-DarkTasksManager-tvOSTests.a in Frameworks */,
+				9ACBB6E704BB1813F08C3469 /* libPods-DarkTasksManager-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +122,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0218D0B18D47292D2F8A367B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C81523CEC3A5DC9A3C98F24B /* Pods-DarkTasksManager.debug.xcconfig */,
+				9FF11DCE90AE523E266E51D7 /* Pods-DarkTasksManager.release.xcconfig */,
+				F1EA27B681CDDAA5EC9533CE /* Pods-DarkTasksManager-tvOS.debug.xcconfig */,
+				D2CEBC8E97756C5E1C69B710 /* Pods-DarkTasksManager-tvOS.release.xcconfig */,
+				266008337F32AB2CBF6007CA /* Pods-DarkTasksManager-tvOSTests.debug.xcconfig */,
+				FEA4A5569CF69AAD6B648D76 /* Pods-DarkTasksManager-tvOSTests.release.xcconfig */,
+				F2B67442684EA40314EEA8DC /* Pods-DarkTasksManagerTests.debug.xcconfig */,
+				B5DB29282D620781A164072C /* Pods-DarkTasksManagerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* DarkTasksManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,10 +157,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				72C5A3BB1C3D24C8C4D3F500 /* libPods-DarkTasksManager.a */,
-				2D67519CDD7A3853446201F2 /* libPods-DarkTasksManager-tvOS.a */,
-				BB58CB64B327B5B70DD95978 /* libPods-DarkTasksManager-tvOSTests.a */,
-				BEC455D6CF4C98D3A4068562 /* libPods-DarkTasksManagerTests.a */,
+				FB2A30DE0D2FA778B559F9E0 /* libPods-DarkTasksManager.a */,
+				A8B6308AACBA46F705297F7A /* libPods-DarkTasksManager-tvOS.a */,
+				3BE264603E19C06528D8FBC8 /* libPods-DarkTasksManager-tvOSTests.a */,
+				67C4A2B7CC49715D1418882C /* libPods-DarkTasksManagerTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,7 +180,7 @@
 				00E356EF1AD99517003FC87E /* DarkTasksManagerTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				FBC6DF27082B536BB05F5A19 /* Pods */,
+				0218D0B18D47292D2F8A367B /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -182,22 +198,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBC6DF27082B536BB05F5A19 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EE3899E6CCA0691380A01708 /* Pods-DarkTasksManager.debug.xcconfig */,
-				AF88DE0658C7D535F09E0D0F /* Pods-DarkTasksManager.release.xcconfig */,
-				AC2C1E33B819AE4B33151D28 /* Pods-DarkTasksManager-tvOS.debug.xcconfig */,
-				7B726B05AB46D55BEE00E644 /* Pods-DarkTasksManager-tvOS.release.xcconfig */,
-				98661FCF9B5CA50DB82A9889 /* Pods-DarkTasksManager-tvOSTests.debug.xcconfig */,
-				BE7F141F707D0DCE595962CB /* Pods-DarkTasksManager-tvOSTests.release.xcconfig */,
-				78D89CE161B9D4981130C904 /* Pods-DarkTasksManagerTests.debug.xcconfig */,
-				146CDF415206A609FF6F9E2F /* Pods-DarkTasksManagerTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,7 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "DarkTasksManagerTests" */;
 			buildPhases = (
-				595AC4CF28159BBB95A9C6E2 /* [CP] Check Pods Manifest.lock */,
+				E4D1F92EC9D5AB91493B3270 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -224,7 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DarkTasksManager" */;
 			buildPhases = (
-				42CED7EE11821A8D511A33B7 /* [CP] Check Pods Manifest.lock */,
+				67A8EAD2D8E6848E5E7D2568 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -244,7 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DarkTasksManager-tvOS" */;
 			buildPhases = (
-				A8372979A5BEEF09D435DA85 /* [CP] Check Pods Manifest.lock */,
+				F6431C2AE62975EBC82DB1E7 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -264,7 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DarkTasksManager-tvOSTests" */;
 			buildPhases = (
-				086184BDC6B00A2400EF983E /* [CP] Check Pods Manifest.lock */,
+				4975F4F74151B6B83605E9A3 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -292,13 +292,16 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+                    13B07F861A680F5B00A75B9A = {
+                        ProvisioningStyle = Manual;
+                    };
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
 				};
@@ -373,7 +376,21 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		086184BDC6B00A2400EF983E /* [CP] Check Pods Manifest.lock */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		4975F4F74151B6B83605E9A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,21 +412,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		42CED7EE11821A8D511A33B7 /* [CP] Check Pods Manifest.lock */ = {
+		67A8EAD2D8E6848E5E7D2568 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -431,7 +434,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		595AC4CF28159BBB95A9C6E2 /* [CP] Check Pods Manifest.lock */ = {
+		E4D1F92EC9D5AB91493B3270 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,7 +456,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A8372979A5BEEF09D435DA85 /* [CP] Check Pods Manifest.lock */ = {
+		F6431C2AE62975EBC82DB1E7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -580,7 +583,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78D89CE161B9D4981130C904 /* Pods-DarkTasksManagerTests.debug.xcconfig */;
+			baseConfigurationReference = F2B67442684EA40314EEA8DC /* Pods-DarkTasksManagerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -603,7 +606,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 146CDF415206A609FF6F9E2F /* Pods-DarkTasksManagerTests.release.xcconfig */;
+			baseConfigurationReference = B5DB29282D620781A164072C /* Pods-DarkTasksManagerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -623,9 +626,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE3899E6CCA0691380A01708 /* Pods-DarkTasksManager.debug.xcconfig */;
+			baseConfigurationReference = C81523CEC3A5DC9A3C98F24B /* Pods-DarkTasksManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+                DEVELOPMENT_TEAM = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = DarkTasksManager/Info.plist;
@@ -643,9 +649,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF88DE0658C7D535F09E0D0F /* Pods-DarkTasksManager.release.xcconfig */;
+			baseConfigurationReference = 9FF11DCE90AE523E266E51D7 /* Pods-DarkTasksManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CODE_SIGN_IDENTITY = "iPhone Distribution";
+                "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+                DEVELOPMENT_TEAM = "";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = DarkTasksManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -662,7 +671,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC2C1E33B819AE4B33151D28 /* Pods-DarkTasksManager-tvOS.debug.xcconfig */;
+			baseConfigurationReference = F1EA27B681CDDAA5EC9533CE /* Pods-DarkTasksManager-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -690,7 +699,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B726B05AB46D55BEE00E644 /* Pods-DarkTasksManager-tvOS.release.xcconfig */;
+			baseConfigurationReference = D2CEBC8E97756C5E1C69B710 /* Pods-DarkTasksManager-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -718,7 +727,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98661FCF9B5CA50DB82A9889 /* Pods-DarkTasksManager-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 266008337F32AB2CBF6007CA /* Pods-DarkTasksManager-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -745,7 +754,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE7F141F707D0DCE595962CB /* Pods-DarkTasksManager-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = FEA4A5569CF69AAD6B648D76 /* Pods-DarkTasksManager-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

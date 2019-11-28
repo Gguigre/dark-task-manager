@@ -1,4 +1,7 @@
+// Template last updated for 0.60.3
+
 apply plugin: "com.android.application"
+
 
 import com.android.build.OutputFile
 
@@ -119,6 +122,11 @@ def jscFlavor = 'org.webkit:android-jsc:+'
  */
 def enableHermes = project.ext.react.get("enableHermes", false);
 
+def _applicationId = System.getenv("GRADLE_APP_IDENTIFIER") ?: 'com.darktasksmanager'
+def _appName = System.getenv("GRADLE_APP_NAME") ?: 'DarkTasksManager debug'
+def _versionCode = (System.getenv("ANDROID_VERSION_CODE") ?: "1") as Integer
+def _versionName = System.getenv("ANDROID_VERSION_NAME") ?: "1.0.0"
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
@@ -128,11 +136,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.darktasksmanager"
+        applicationId _applicationId
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode _versionCode
+        versionName _versionName
     }
     splits {
         abi {
@@ -149,17 +157,23 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file(String.valueOf(System.getenv("GRADLE_KEYSTORE")))
+            storePassword System.getenv("GRADLE_KEYSTORE_PASSWORD")
+            keyAlias System.getenv("GRADLE_KEYSTORE_ALIAS")
+            keyPassword System.getenv("GRADLE_KEYSTORE_ALIAS_PASSWORD")
+        }
     }
     buildTypes {
         debug {
+            resValue "string", "app_name", _appName
             signingConfig signingConfigs.debug
         }
         release {
-            // Caution! In production, you need to generate your own keystore file.
-            // see https://facebook.github.io/react-native/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            resValue "string", "app_name", _appName
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release
@@ -173,8 +187,16 @@ android {
                 output.versionCodeOverride =
                         versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
             }
-
         }
+    }
+
+    packagingOptions {
+        pickFirst '**/armeabi-v7a/libc++_shared.so'
+        pickFirst '**/x86/libc++_shared.so'
+        pickFirst '**/arm64-v8a/libc++_shared.so'
+        pickFirst '**/x86_64/libc++_shared.so'
+        pickFirst '**/x86/libjsc.so'
+        pickFirst '**/armeabi-v7a/libjsc.so'
     }
 }
 
@@ -183,11 +205,11 @@ dependencies {
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     if (enableHermes) {
-        def hermesPath = "../../node_modules/hermes-engine/android/";
-        debugImplementation files(hermesPath + "hermes-debug.aar")
-        releaseImplementation files(hermesPath + "hermes-release.aar")
+      def hermesPath = "../../node_modules/hermesvm/android/";
+      debugImplementation files(hermesPath + "hermes-debug.aar")
+      releaseImplementation files(hermesPath + "hermes-release.aar")
     } else {
-        implementation jscFlavor
+      implementation jscFlavor
     }
 }
 
