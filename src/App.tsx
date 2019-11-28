@@ -5,11 +5,7 @@ import { RootNavigator } from './navigation';
 import { withTranslation } from './hoc/withTranslation';
 import { withRedux } from './hoc/withRedux';
 
-const enhance = compose<{}, {}>(
-  withRedux,
-  withTranslation,
-  createAppContainer
-);
+const enhance = compose<{}, {}>(withRedux, withTranslation, createAppContainer);
 const AppContainer = enhance(RootNavigator);
 
 let App = undefined;

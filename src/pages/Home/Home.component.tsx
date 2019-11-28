@@ -1,22 +1,36 @@
 import React, { PureComponent } from 'react';
-import { Button, StyleSheet, View, Text } from 'react-native';
-import { NavigationInjectedProps } from 'react-navigation';
-import I18nJS from 'i18n-js';
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { NavigationInjectedProps, ScrollView } from 'react-navigation';
+import { theme } from '../../theme';
+import { Title } from '../../components/Title';
+import { Card } from '../../components/Card';
+import { Subtitle } from '../../components/Subtitle';
+import { Section } from '../../components/Section';
+import { CurrentTaskCard } from '../../components/CurrentTaskCard';
 
 const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: theme.colors.background,
+  },
 });
 
 export class Home extends PureComponent<NavigationInjectedProps<{}>> {
-  private goToLoginPage = (): void => {
-    this.props.navigation.navigate('Login');
-  };
-
   public render(): JSX.Element {
     return (
       <View style={styles.container}>
-        <Text>{I18nJS.t('home.title')}</Text>
-        <Button title={I18nJS.t('home.loginButton')} onPress={this.goToLoginPage} />
+        <ScrollView
+          contentContainerStyle={{
+            padding: theme.spacings.xxlarge,
+          }}
+        >
+          <Section title="CurrentTask">
+            <CurrentTaskCard />
+          </Section>
+          <Title>My projects</Title>
+          <Title>Done today</Title>
+        </ScrollView>
       </View>
     );
   }
