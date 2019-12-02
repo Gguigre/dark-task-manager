@@ -16,7 +16,7 @@ export interface TasksState {
 export const initialState = {
   currentTaskId: 'toto',
   tasks: {
-    toto: { id: 'toto', title: 'toto', startTime: new Date(1574990924918), endTime: null },
+    toto: { id: 'toto', title: 'toto', startTime: new Date(1575295924918), endTime: null },
   },
 };
 

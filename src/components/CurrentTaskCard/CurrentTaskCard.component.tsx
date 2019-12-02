@@ -1,10 +1,13 @@
 import React, { FC, useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { useSelector } from 'react-redux';
+import { currentTaskSelector } from '../../redux/Tasks/selector';
+import { computeDurationFromNow } from '../../service/computeDurationFromNow';
+import { formatDuration } from '../../service/formatDuration';
 import { theme } from '../../theme';
 import { Card } from '../Card';
 import { StopButton } from '../StopButton';
 import { Subtitle } from '../Subtitle';
-import { Task } from '../../redux/Tasks/reducer';
 
 const styles = StyleSheet.create({
   container: { flexDirection: 'row' },
@@ -20,31 +23,40 @@ const styles = StyleSheet.create({
   CTAContainer: { alignItems: 'center', justifyContent: 'center' },
 });
 
-export const CurrentTaskCard: FC<{ currentTask: Task }> = ({ currentTask }) => {
+export const CurrentTaskCard: FC<{}> = () => {
   const [countdown, setCountdown] = useState({
     hours: 0,
     minutes: 0,
     seconds: 0,
   });
 
+  const currentTask = useSelector(currentTaskSelector);
+  if (!currentTask) {
+    return null;
+  }
+
   useEffect(() => {
-    const now = new Date();
     const { startTime } = currentTask;
+    const numberStartTime = Number(startTime);
+    const countdown = computeDurationFromNow(Number(numberStartTime));
 
-    const hours = Math.floor(Math.abs(now - startTime) / 36e5);
-    const minutes = Math.floor((Math.abs(now - startTime) / 60e3) % 60);
-    const seconds = Math.floor((Math.abs(now - startTime) / 1e3) % 60);
-    setCountdown({ hours, minutes, seconds });
-  });
+    setCountdown(countdown);
+    const countdownInterval = setInterval(
+      () => setCountdown(computeDurationFromNow(numberStartTime)),
+      1000
+    );
 
-  const { hours, minutes, seconds } = countdown;
+    return () => {
+      clearInterval(countdownInterval);
+    };
+  }, [currentTask]);
 
   return (
     <Card>
       <View style={styles.container}>
         <View style={styles.dataContainer}>
           <Subtitle>{currentTask.title}</Subtitle>
-          <Text style={styles.spentTime}>{`${hours}:${minutes}:${seconds}`}</Text>
+          <Text style={styles.spentTime}>{formatDuration(countdown)}</Text>
         </View>
         <View style={styles.CTAContainer}>
           <StopButton />
