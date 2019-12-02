@@ -6,7 +6,7 @@ import { computeDurationFromNow } from '../../service/computeDurationFromNow';
 import { formatDuration } from '../../service/formatDuration';
 import { theme } from '../../theme';
 import { Card } from '../Card';
-import { StopButton } from '../StopButton';
+import { StopCurrentTaskButton } from '../StopCurrentTaskButton';
 import { Subtitle } from '../Subtitle';
 
 const styles = StyleSheet.create({
@@ -31,11 +31,9 @@ export const CurrentTaskCard: FC<{}> = () => {
   });
 
   const currentTask = useSelector(currentTaskSelector);
-  if (!currentTask) {
-    return null;
-  }
 
   useEffect(() => {
+    if (!currentTask) return;
     const { startTime } = currentTask;
     const numberStartTime = Number(startTime);
     const countdown = computeDurationFromNow(Number(numberStartTime));
@@ -51,6 +49,9 @@ export const CurrentTaskCard: FC<{}> = () => {
     };
   }, [currentTask]);
 
+  if (!currentTask) {
+    return null;
+  }
   return (
     <Card>
       <View style={styles.container}>
@@ -59,7 +60,7 @@ export const CurrentTaskCard: FC<{}> = () => {
           <Text style={styles.spentTime}>{formatDuration(countdown)}</Text>
         </View>
         <View style={styles.CTAContainer}>
-          <StopButton />
+          <StopCurrentTaskButton />
         </View>
       </View>
     </Card>

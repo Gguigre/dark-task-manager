@@ -32,4 +32,20 @@ export const tasksReducer = createReducer<TasksState, TasksActions>(initialState
       [action.payload.task.id]: action.payload.task,
     },
   }),
+  STOP_CURRENT_TASK: state => {
+    if (!state.currentTaskId) {
+      return state;
+    }
+    return {
+      ...state,
+      currentTaskId: null,
+      tasks: {
+        ...state.tasks,
+        [state.currentTaskId]: {
+          ...state.tasks[state.currentTaskId],
+          endTime: new Date(),
+        },
+      },
+    };
+  },
 });
