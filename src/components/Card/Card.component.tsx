@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { theme } from '../../theme';
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   card: {
     backgroundColor: theme.colors.foreground,
     padding: theme.spacings.medium,

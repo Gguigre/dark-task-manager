@@ -35,12 +35,11 @@ export const CurrentTaskCard: FC<{}> = () => {
   useEffect(() => {
     if (!currentTask) return;
     const { startTime } = currentTask;
-    const numberStartTime = Number(startTime);
-    const countdown = computeDurationFromNow(Number(numberStartTime));
+    const countdown = computeDurationFromNow(startTime);
 
     setCountdown(countdown);
     const countdownInterval = setInterval(
-      () => setCountdown(computeDurationFromNow(numberStartTime)),
+      () => setCountdown(computeDurationFromNow(startTime)),
       1000
     );
 
